@@ -1,102 +1,62 @@
 # ==========================================
-# 站点核心配置
+# 核心设置
 # ==========================================
-
 theme: jekyll-theme-chirpy
-lang: zh-CN # 设定为中文，让日期和搜索更符合习惯
-timezone: Asia/Shanghai # 设定为中国标准时间
+lang: zh-CN
+timezone: Asia/Shanghai
 
-# ↓ --------------------------
-# SEO 与 社交分享设置 (jekyll-seo-tag)
-
-title: 码农墨迹 # 你的网站标题
-tagline: 记录技术成长，分享生活瞬间 # 副标题，显示在头像下方
-description: >- # 用于搜索引擎描述
+title: 码农墨迹
+tagline: 记录技术成长，分享生活瞬间
+description: >-
   这是一个关于全栈开发、AI 探索以及生活随笔的技术博客。
-  保持好奇，持续输出。
 
-# ！！！重要：如果你使用 <username>.github.io，这里填 https://<username>.github.io
-# 末尾不要加斜杠
-url: "https://ywx567.github.io" 
+# 必须确认你的 GitHub 仓库名就是 ywx567.github.io
+url: "https://ywx567.github.io"
+baseurl: "" 
 
 github:
-  username: ywx920 # TODO: 替换为你的 GitHub ID
-
-twitter:
-  username: your_twitter_id # TODO: 替换为你的 Twitter ID
+  username: ywx920
 
 social:
-  name: ywx567 # TODO: 填入你的真名或常用网名
-  email: ywx20@foxmail.com # TODO: 你的联系邮箱
+  name: ywx567
+  email: ywx20@foxmail.com
   links:
-    #- https://github.com/your_github_id # 第一个是版权链接
-    #- https://twitter.com/your_twitter_id
-    #- https://www.linkedin.com/in/your_name # 建议加上 LinkedIn 增加职业感
-
-# 站点验证（选填，用于搜索引擎收录）
-webmaster_verifications:
-  google: 
-  bing: 
-
-# ↑ --------------------------
+    - https://github.com/ywx920 # 第一个是版权链接
 
 # ==========================================
-# 功能与插件设置
+# 插件与功能（已关闭未配置项，防止报错）
 # ==========================================
 
-# 网站分析 (推荐使用 Google Analytics 或 Umami)
-analytics:
-  google:
-    id: # UA-XXXXXXXXX-X 或 G-XXXXXXXXXX
+# 暂时置空头像，直到你上传了图片到 assets/img/avatar.jpg
+avatar: 
 
-# 主题模式：留空则支持亮/暗色手动切换
-theme_mode: # [light | dark]
+# 关闭未配置的评论系统
+comments:
+  active: false 
 
-# 侧边栏头像
-avatar: /assets/avatar.jpg # 建议把照片放在这个路径下
-
-# 文章内是否显示目录
+# 开启目录
 toc: true
 
-# 评论系统 (强烈推荐使用 Giscus，基于 GitHub Discussions)
-comments:
-  provider: giscus
-  giscus:
-    repo: your_github_id/your_repo_name # TODO: 你的仓库名
-    repo_id: R_xxxxxxxx # TODO: 在 giscus.app 获取
-    category: Announcements
-    category_id: DIC_xxxxxxxx # TODO: 在 giscus.app 获取
-    mapping: pathname
-    strict: 0
-    input_position: bottom
-    reactions_enabled: 1
-
-# PWA (让你的网站可以像 App 一样安装到桌面)
+# PWA 设置
 pwa:
   enabled: true
   cache:
     enabled: true
 
-# 分页设置
 paginate: 10
 
-# ！！！重要：如果你的项目不是根目录（比如 username.github.io/blog/）
-# 请在这里填入 "/blog"，否则保持空字符串 ""
-baseurl: ""
-
 # ==========================================
-# 进阶默认配置 (建议保持默认)
+# 默认布局配置
 # ==========================================
-
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
-      comments: true # 默认开启评论
+      comments: true
       toc: true
-      permalink: /posts/:title/ # 优雅的 URL 格式
+      permalink: /posts/:title/
   - scope:
       path: ""
       type: tabs
@@ -104,7 +64,9 @@ defaults:
       layout: page
       permalink: /:title/
 
-# 资源排除
+# ==========================================
+# 排除项
+# ==========================================
 exclude:
   - "*.gem"
   - "*.gemspec"
@@ -114,3 +76,4 @@ exclude:
   - LICENSE
   - "*.config.js"
   - "package*.json"
+  - vendor
