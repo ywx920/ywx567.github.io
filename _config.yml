@@ -53,7 +53,7 @@ analytics:
 theme_mode: # [light | dark]
 
 # 侧边栏头像
-avatar: /assets/img/avatar.jpg # 建议把照片放在这个路径下
+avatar: /assets/avatar.jpg # 建议把照片放在这个路径下
 
 # 文章内是否显示目录
 toc: true
