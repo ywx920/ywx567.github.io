@@ -17,21 +17,21 @@ description: >- # 用于搜索引擎描述
 
 # ！！！重要：如果你使用 <username>.github.io，这里填 https://<username>.github.io
 # 末尾不要加斜杠
-url: "https://yourname.github.io" 
+url: "https://ywx567.github.io" 
 
 github:
-  username: your_github_id # TODO: 替换为你的 GitHub ID
+  username: ywx920 # TODO: 替换为你的 GitHub ID
 
 twitter:
   username: your_twitter_id # TODO: 替换为你的 Twitter ID
 
 social:
-  name: 你的名字 # TODO: 填入你的真名或常用网名
-  email: hello@domain.com # TODO: 你的联系邮箱
+  name: ywx567 # TODO: 填入你的真名或常用网名
+  email: ywx20@foxmail.com # TODO: 你的联系邮箱
   links:
-    - https://github.com/your_github_id # 第一个是版权链接
-    - https://twitter.com/your_twitter_id
-    - https://www.linkedin.com/in/your_name # 建议加上 LinkedIn 增加职业感
+    #- https://github.com/your_github_id # 第一个是版权链接
+    #- https://twitter.com/your_twitter_id
+    #- https://www.linkedin.com/in/your_name # 建议加上 LinkedIn 增加职业感
 
 # 站点验证（选填，用于搜索引擎收录）
 webmaster_verifications:
